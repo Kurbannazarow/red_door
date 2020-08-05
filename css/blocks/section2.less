@@ -1,0 +1,122 @@
+//main: ../style.less
+
+.section2 {
+    padding-top: 80px;
+    padding-bottom: 110px;
+
+}
+
+.sale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.start {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        // background: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .kw {
+            width: 90px;
+            height: 80px;
+            background: url(../img/kwadrat.png) center no-repeat;
+            font-size: 27px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+        }
+
+        .kw-text {
+            font-size: 13px;
+            margin-top: 10px;
+            color: #000;
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+.sale__min-title {
+    margin-bottom: 29px;
+    color: #000;
+    font-size: 20px;
+}
+
+.sale__big-title {
+    margin-bottom: 60px;
+    margin-top: 70px;
+    color: #931d01;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.sale__text {
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 32px;
+    line-height: 1.5;
+}
+
+.sale__item-tilda {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(../img/tildas.png) left no-repeat;
+    background-size: cover;
+    padding: 45px 50px;
+    margin-top: 70px;
+}
+
+.sale__tilda {
+    color: white;
+    line-height: 33px;
+}
+
+.sale__tilda:not(:last-child) {
+    margin-right: 60px;
+}
+
+.sale__tilda1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sale__tilda2 {
+    font-size: 77px;
+    text-align: center;
+    margin-left: 76px;
+}
+
+.sale__tilda3 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: right;
+
+    span {
+        font-size: 27px;
+    }
+}
+
+@media @mobile {
+
+    .sale__tilda1,
+    .sale__tilda2 {
+        margin-right: 0;
+    }
+}

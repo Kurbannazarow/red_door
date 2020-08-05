@@ -1,0 +1,86 @@
+// main: ../style.less
+.section7 {
+    padding: 90px 0 20px 0;
+}
+
+.managed__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-bottom: 90px;
+
+
+    @media @mobile {
+        text-align: center;
+    }
+}
+
+.managed__column-left {
+    flex-grow: 1;
+}
+
+
+.managed__column-right {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media @mobile {
+        align-items: center;
+    }
+}
+
+.managed__street {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.managed__date {
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+.managed__tel {
+    font-size: 15px;
+    margin-bottom: 35px;
+
+    a {
+        color: #000;
+    }
+}
+
+.managed__small {
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.managed__managers {
+    display: flex;
+    align-items: center;
+}
+
+.managed__block {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.managed__name {
+    margin-left: 25px;
+}
+
+.rad {
+    text-align: center;
+    padding-bottom: 80px;
+    border-bottom: 2px solid grey;
+    font-size: 20px;
+    font-weight: bold;
+}

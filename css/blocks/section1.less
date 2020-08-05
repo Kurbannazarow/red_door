@@ -1,0 +1,147 @@
+// main: ../style.less
+
+.section1 {
+    padding-top: 100px;
+    padding-bottom: 130px;
+    background: url(../img/mezhkomnatnye.png) center no-repeat;
+}
+
+.item {
+    color: white;
+}
+
+.title {
+    margin-left: 335px;
+    margin-bottom: 151px;
+
+    .min__title {
+        font-size: 23px;
+    }
+
+    .min__title,
+    .big__title {
+        line-height: 40px;
+    }
+
+    .big__title {
+        font-size: 43px;
+    }
+}
+
+.days {
+    display: flex;
+    align-items: center;
+    margin-left: 335px;
+
+    &__item {
+        margin-right: 30px;
+    }
+
+    &__item1 {
+        line-height: 35px;
+        padding-right: 40px;
+        font-size: 32px;
+        font-weight: bold;
+        border-right: 2px solid white;
+
+        span {
+            font-size: 50px;
+        }
+
+        .three-day {
+            font-weight: normal;
+            font-size: 30px;
+        }
+    }
+
+    &__item2 {
+        font-size: 20px;
+        line-height: 25px;
+
+        span {
+            font-size: 26px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+@media @mobile {
+    .days {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: auto;
+
+    }
+
+
+    .title {
+        margin-left: auto;
+        margin-bottom: 151px;
+        text-align: center;
+
+        .min__title {
+            font-size: 23px;
+        }
+
+        .min__title,
+        .big__title {
+            line-height: 40px;
+        }
+
+        .big__title {
+            font-size: 43px;
+        }
+    }
+}
+
+@media @mobile-sm {
+    .days {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: auto;
+        text-align: center;
+
+        &__item1 {
+            margin-bottom: 30px;
+            margin-left: 0;
+            padding-right: 0;
+            border: 0;
+            font-size: 26px;
+
+            span {
+                font-size: 35px;
+            }
+
+            .three-day {
+                font-size: 20px;
+            }
+        }
+
+        &__item2 {
+            margin-left: 0;
+        }
+    }
+
+
+    .title {
+        margin-left: auto;
+        margin-bottom: 135px;
+        text-align: center;
+
+        .min__title {
+            font-size: 19px;
+        }
+
+        .min__title,
+        .big__title {
+            line-height: 30px;
+        }
+
+        .big__title {
+            font-size: 30px;
+        }
+    }
+}

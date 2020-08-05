@@ -1,0 +1,97 @@
+// main: ../style.less
+
+.header {
+
+    padding: 16px 0;
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__col {
+        width: 33.33333%;
+    }
+
+    &__logo {
+        img {
+            width: 270px;
+            height: 54px;
+        }
+    }
+
+    &__address {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__map {
+        margin-right: 25px;
+    }
+
+    &__map--text {
+        p {
+            font-size: 14px;
+            font-weight: 700;
+            color: @black;
+            text-align: left;
+        }
+    }
+
+    &__phone {
+        text-align: right;
+
+        @media @mobile-sm {
+            text-align: center;
+        }
+    }
+
+    &__phone--text {
+        margin-bottom: 11px;
+        font-size: 12px;
+        color: @brown;
+        text-align: right;
+
+        @media @mobile-sm {
+            text-align: center;
+        }
+    }
+
+    &__phone--number {
+        font-size: 19px;
+        font-weight: 700;
+        color: @black;
+        text-align: right;
+
+        @media @mobile-sm {
+            text-align: center;
+        }
+    }
+}
+
+@media @mobile {
+    .header__col:first-child {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .header__inner {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media @mobile-sm {
+    .header__col {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .header__inner {
+        display: flex;
+        justify-content: center;
+    }
+}
